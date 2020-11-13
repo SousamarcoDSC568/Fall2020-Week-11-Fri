@@ -55,20 +55,20 @@
             .domain(x_extent)
             .range([ margin, width-margin ]);
         // Add Y axis
-        var yScale = d3.scaleLinear()
+        let yScale = d3.scaleLinear()
             .domain(y_extent)
             .range([ height-margin, margin ]);
 
 
         // compute the density data
-        var contourDensity = d3.contourDensity()
+        let contourDensity = d3.contourDensity()
             .x(function(d) { return xScale(d.culmen_length_mm); })
             .y(function(d) { return yScale(d.culmen_depth_mm); })
             .size([900, 900])
             .bandwidth(bandwidth)
-            (data)
+            (data);
 
-        // show the shape!
+
         let figure = svg.append("g")
 
         figure.selectAll("path")
@@ -80,8 +80,6 @@
             .attr("stroke-linejoin", "round")
             .attr('fill','none')
 
-
-        // Add the Y Axis
         figure.append("g")
             .attr("class", "axis")
             .attr("transform", `translate(${margin},0)`)
@@ -90,23 +88,6 @@
             .attr("class", "axis")
             .attr("transform", "translate(0," + (height-margin) + ")")
             .call(d3.axisBottom(xScale));
-
-
-
-
-       // svg.append("g")
-
-        /*let contour = d3.contours().size([m,n]).thresholds(d3.range(extent[0],extent[1],8))(matrix);
-
-        const path = d3.geoPath()
-
-        svg.selectAll('path')
-            .data(contour).enter().append('path')
-            .attr('d',path)
-            .attr('stroke','black').attr('fill',"none")
-            .attr("stroke-linejoin", "round")
-            .attr('stroke-width','.1px');
-         */
             }
 
 </script>
