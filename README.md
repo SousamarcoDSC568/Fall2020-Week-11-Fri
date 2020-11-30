@@ -1,13 +1,13 @@
 # Fall2020-Week-11-Fri
-Example 1
-  Basic contour using d3.contour
-  Color coded contour
-  interactive threshold
-Example 2
-  basic temperature contour
-  color-coded temperature contour
-  animation of contours
-Example 3
-  Basic density contour
-  color-coded density contour
-  palmer_penguin_species using contour
+Example 1<br>
+  Basic contour using d3.contour<br>
+  Color coded contour<br>
+  interactive threshold<br>
+Example 2<br>
+  basic temperature contour<br>
+  color-coded temperature contour<br>
+  animation of contours<br>
+Example 3<br>
+  Basic density contour<br>
+  color-coded density contour<br>
+  palmer_penguin_species using contour<br>
