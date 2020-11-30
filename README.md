@@ -10,4 +10,3 @@ Example 2<br>
 Example 3<br>
 &nbsp;&nbsp;Basic density contour<br>
 &nbsp;&nbsp;color-coded density contour<br>
-&nbsp;&nbsp;palmer_penguin_species using contour<br>
